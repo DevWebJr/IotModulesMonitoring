@@ -22,6 +22,11 @@ class Module
     /**
      * @ORM\Column(type="string", length=255)
      */
+    private $item;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
     private $ipAddress;
 
     /**
@@ -45,6 +50,17 @@ class Module
      */
     private $logs;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Energy::class, inversedBy="modules")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $energy;
+
+    /**
+     * @ORM\Column(type="float")
+     */
+    private $value;
+
     public function __construct()
     {
         $this->logs = new ArrayCollection();
@@ -53,6 +69,18 @@ class Module
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getItem(): ?string
+    {
+        return $this->item;
+    }
+
+    public function setItem(string $item): self
+    {
+        $this->item = $item;
+
+        return $this;
     }
 
     public function getIpAddress(): ?string
@@ -126,6 +154,30 @@ class Module
         if ($this->logs->removeElement($log)) {
             $log->removeModule($this);
         }
+
+        return $this;
+    }
+
+    public function getEnergy(): ?Energy
+    {
+        return $this->energy;
+    }
+
+    public function setEnergy(?Energy $energy): self
+    {
+        $this->energy = $energy;
+
+        return $this;
+    }
+
+    public function getValue(): ?float
+    {
+        return $this->value;
+    }
+
+    public function setValue(float $value): self
+    {
+        $this->value = $value;
 
         return $this;
     }

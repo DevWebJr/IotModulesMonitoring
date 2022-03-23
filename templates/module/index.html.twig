@@ -3,12 +3,15 @@
 {% block title %}Tous les modules{% endblock %}
 
 {% block body %}
+    <a href="{{ path('app_module_new') }}">Ajouter un module</a>
     <div class="container-fluid d-flex justify-content-center mt-5 rounded-3 border-primary data-display-box">
         {% for module in modules %}
             <div class="card mb-3 text-center m-1">
-                <h3 class="card-header">{{ module.category.name }}</h3>
+                <h3 class="card-header">{{ module.item }}</h3>
                 <div class="card-body">
+                    <h4 class="card-header text-secondary mb-2">{{ module.category.name }}</h4>
                     <h5 class="card-title text-info">Adresse IP : {{ module.ipAddress }}</h5>
+                    <div class="dropdown-divider"></div>
                     <h6 hidden class="card-subtitle text-muted">{{ module.id }}</h6>
                 </div>
                 <div class="card-body">
@@ -19,7 +22,7 @@
                     {% endif %}
                 </div>
                 <div class="card-body">
-                    <a href="#" class="card-link">Voir la fiche complète</a>
+                    <a href="{{ path('app_module_show', { id: module.id }) }}" class="card-link">Voir la fiche complète</a>
                 </div>
                 <div class="card-footer text-muted">
                     {% if module.functional %}
@@ -32,9 +35,6 @@
             {% else %}
             <div colspan="5" class="text-primary">no records found</div>
         {% endfor %}
-
     </div>
-
-    <a href="{{ path('app_module_new') }}">Create new</a>
 {% endblock %}
 
