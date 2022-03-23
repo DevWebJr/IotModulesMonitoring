@@ -1,0 +1,3 @@
+
+Y
+)Documentation/IotModulesMonitoring.drawio,d\c\dcb339e950ba0a7e1774880fe2bb3e8e80e68a1c
