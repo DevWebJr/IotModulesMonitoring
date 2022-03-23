@@ -1,3 +1,19 @@
 body {
     background-color: #f7f1e3;
 }
+
+/*MODULES*/
+.data-display-box {
+    width: 80%;
+    margin: 2vw;
+    padding: 0;
+    flex-wrap:wrap;
+    border: solid 2px black;
+}
+
+/*FORMULAIRES*/
+.data-form {
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+}

@@ -1,0 +1,9 @@
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+    <form>
+        <div class="form-group text-center mt-3">
+            <button class="btn btn-success">{{ button_label|default('Valider') }}</button>
+        </div>
+    </form>
+
+{{ form_end(form) }}

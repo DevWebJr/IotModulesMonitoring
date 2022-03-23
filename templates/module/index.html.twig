@@ -1,0 +1,40 @@
+{% extends 'layouts/base.html.twig' %}
+
+{% block title %}Tous les modules{% endblock %}
+
+{% block body %}
+    <div class="container-fluid d-flex justify-content-center mt-5 rounded-3 border-primary data-display-box">
+        {% for module in modules %}
+            <div class="card mb-3 text-center m-1">
+                <h3 class="card-header">{{ module.category.name }}</h3>
+                <div class="card-body">
+                    <h5 class="card-title text-info">Adresse IP : {{ module.ipAddress }}</h5>
+                    <h6 hidden class="card-subtitle text-muted">{{ module.id }}</h6>
+                </div>
+                <div class="card-body">
+                    {% if module.alight %}
+                        <div class="btn btn-success text-light">ON</div>
+                    {% else %}
+                        <div class="btn btn-danger text-light">OFF</div>
+                    {% endif %}
+                </div>
+                <div class="card-body">
+                    <a href="#" class="card-link">Voir la fiche complète</a>
+                </div>
+                <div class="card-footer text-muted">
+                    {% if module.functional %}
+                        <div class="btn btn-success text-light">Ce module est fonctionnel.</div>
+                    {% else %}
+                        <div class="btn btn-danger text-light">Ce module n'est pas fonctionnel.</div>
+                    {% endif %}
+                </div>
+            </div>
+            {% else %}
+            <div colspan="5" class="text-primary">no records found</div>
+        {% endfor %}
+
+    </div>
+
+    <a href="{{ path('app_module_new') }}">Create new</a>
+{% endblock %}
+

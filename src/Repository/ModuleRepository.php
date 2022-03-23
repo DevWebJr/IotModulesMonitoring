@@ -45,10 +45,9 @@ class ModuleRepository extends ServiceEntityRepository
         }
     }
 
-    // /**
-    //  * @return Module[] Returns an array of Module objects
-    //  */
-    /*
+    /**
+     * @return Module[] Returns an array of Module objects
+     */
     public function findByExampleField($value)
     {
         return $this->createQueryBuilder('m')
@@ -60,7 +59,6 @@ class ModuleRepository extends ServiceEntityRepository
             ->getResult()
         ;
     }
-    */
 
     /*
     public function findOneBySomeField($value): ?Module

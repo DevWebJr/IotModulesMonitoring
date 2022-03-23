@@ -21,8 +21,10 @@
         {# Segmentation de l'architecture de l'application #}
         {# Un header statique #}
         {{ include('layouts/header.html.twig') }}
+        {# Un bandeau avec les notifications #}
+        {% include "layouts/partials/_flash_messages.html.twig" %}
         {# Un main dynamique #}
-        <main class="container-fluid p-2 border-dark">
+        <main class="container-fluid d-flex justify-content-center p-2">
             {% block body %}
             
             {% endblock %}

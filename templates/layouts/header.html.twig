@@ -14,10 +14,9 @@
                         aria-haspopup="true" aria-expanded="false">Gérer les modules</a>
                     <!--Liens vers le CRUD des modules-->
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Ajouter</a>
-                        <a class="dropdown-item" href="#">Supprimer</a>
+                        <a class="dropdown-item" href="{{ path('app_module_index') }}">Tous les modules</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Afficher tous les modules</a>
+                        <a class="dropdown-item" href="{{ path('app_module_new') }}">Ajouter</a>
                     </div>
                 </li>
             </ul>
