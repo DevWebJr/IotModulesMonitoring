@@ -16,7 +16,6 @@ class ModuleType extends AbstractType
             ->add('alight')
             ->add('functional')
             ->add('category')
-            ->add('logs')
         ;
     }
 

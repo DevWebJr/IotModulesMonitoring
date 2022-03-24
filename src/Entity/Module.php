@@ -46,11 +46,6 @@ class Module
     private $category;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Log::class, mappedBy="modules")
-     */
-    private $logs;
-
-    /**
      * @ORM\ManyToOne(targetEntity=Energy::class, inversedBy="modules")
      * @ORM\JoinColumn(nullable=false)
      */
@@ -127,33 +122,6 @@ class Module
     public function setCategory(?Category $category): self
     {
         $this->category = $category;
-
-        return $this;
-    }
-
-    /**
-     * @return Collection<int, Log>
-     */
-    public function getLogs(): Collection
-    {
-        return $this->logs;
-    }
-
-    public function addLog(Log $log): self
-    {
-        if (!$this->logs->contains($log)) {
-            $this->logs[] = $log;
-            $log->addModule($this);
-        }
-
-        return $this;
-    }
-
-    public function removeLog(Log $log): self
-    {
-        if ($this->logs->removeElement($log)) {
-            $log->removeModule($this);
-        }
 
         return $this;
     }

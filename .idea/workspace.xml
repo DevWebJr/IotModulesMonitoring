@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f24ec1c-2459-4fb0-8c0c-c3a3193fc233" name="Changes" comment="" />
+    <list default="true" id="3f24ec1c-2459-4fb0-8c0c-c3a3193fc233" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/script.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220323193840.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220323204058.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220323205749.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Module.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/Module1Type.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/Module1Type.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ModuleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ModuleType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/LogRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layouts/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/header.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/module/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/module/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/module/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/module/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/module/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/module/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/module/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/module/show.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,7 +168,6 @@
       <path value="$PROJECT_DIR$/vendor/phpstan/phpdoc-parser" />
       <path value="$PROJECT_DIR$/vendor/doctrine/common" />
       <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
-      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
@@ -158,6 +183,8 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
       <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
     </include_path>
   </component>
   <component name="ProjectId" id="26mfQd9tXgfsi4t0w3pVcF8PGp9" />
@@ -170,9 +197,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -193,7 +222,8 @@
       <option name="presentableId" value="Default" />
       <updated>1648033667487</updated>
       <workItem from="1648033668700" duration="417000" />
-      <workItem from="1648034181673" duration="22109000" />
+      <workItem from="1648034181673" duration="22791000" />
+      <workItem from="1648106844077" duration="12715000" />
     </task>
     <servers />
   </component>
