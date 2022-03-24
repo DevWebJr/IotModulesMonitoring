@@ -6,6 +6,12 @@ a {
     text-decoration: none;
 }
 
+/*Home*/
+.speech {
+    min-width: 25vw;
+    max-width: 25vw;
+}
+
 /*MODULES*/
 .data-display-box {
     width: 80%;

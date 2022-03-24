@@ -3,9 +3,17 @@
 {% block title %}Page d'accueil{% endblock %}
 
 {% block body %}
-<div class="container-fluid d-flex justify-content-center mt-5">
-    <a href="{{path('home')}}">
+    <div class="container-fluid d-flex justify-content-center mt-5">
+
         <img class="rounded-pill" src="{{asset('images/wallpaper.png')}}" alt="image de la page d'accueil">
-    </a>
-</div>
+
+        <div class="speech m-5 text-secondary text-center">
+            <p>Depuis plusieurs années, les objets connectés à internet se multiplient, cependant les outils pour vérifier leur fonctionnement et leur disponibilité restent rares.
+                <br><br>Bienvenue sur le site web de monitoring de modules IOT.
+                <br><br>
+                <a href="{{ path('app_module_index') }}">Une démonstration en image ?</a>
+            </p>
+        </div>
+    </div>
+
 {% endblock %}
