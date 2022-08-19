@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{{path('home')}}">I M M<small>onitoring</small></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Gérer les modules</a>
+                    <!--Liens vers le CRUD des modules-->
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{ path('app_module_index') }}">Tous les modules</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{{ path('app_module_new') }}">Ajouter</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="true" aria-expanded="false">Graphiques</a>
+                    <!--Liens vers le CRUD des modules-->
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{ path('app_module_index') }}">Par Catégorie</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{{ path('app_module_new') }}">Par Module</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

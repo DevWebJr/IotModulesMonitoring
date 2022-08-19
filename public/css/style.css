@@ -1,0 +1,46 @@
+body {
+    background-color: #f7f1e3;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Home*/
+.speech {
+    min-width: 25vw;
+    max-width: 25vw;
+}
+
+/*MODULES*/
+.data-display-box {
+    width: 80%;
+    margin: 2vw;
+    padding: 0.5vw;
+    flex-wrap:wrap;
+    border: solid 7px #F7F1E3;
+}
+
+.module-item {
+    min-width: 25vw;
+    max-width: 25vw;
+}
+
+.module-item-header {
+    min-height: 5vw;
+    max-height: 5vw;
+}
+
+.symbol {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    font-weight: bolder;
+}
+/*FORMULAIRES*/
+.data-form {
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+}
+

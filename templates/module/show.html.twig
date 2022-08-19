@@ -1,0 +1,38 @@
+{% extends 'layouts/base.html.twig' %}
+
+{% block title %}Tous les modules{% endblock %}
+
+{% block body %}
+    <a href="{{ path('app_module_index') }}" title="revenir à la liste"><span class="symbol">&#8592;</span></a>
+    <div class="container-fluid d-flex justify-content-center mt-5 rounded-3 data-display-box module-item">
+        <div class="card mb-3 text-center m-1">
+            <h3 class="card-header module-item-header">{{ module.item }}</h3>
+            <div class="card-body">
+                <h4 class="card-header text-secondary mb-2">{{ module.category.name }}</h4>
+                <h5 class="card-title text-info">Adresse IP : {{ module.ipAddress }}</h5>
+                <div class="dropdown-divider"></div>
+                <h6 hidden class="card-subtitle text-muted">{{ module.id }}</h6>
+            </div>
+            <div class="card-body">
+                {% if module.alight %}
+                    <div class="btn btn-success text-light">ON</div>
+                {% else %}
+                    <div class="btn btn-danger text-light">OFF</div>
+                {% endif %}
+            </div>
+            <div class="card-footer text-muted">
+                {% if module.functional %}
+                    <div class="btn btn-success text-light">Ce module est fonctionnel.</div>
+                {% else %}
+                    <div class="btn btn-danger text-light">Ce module n'est pas fonctionnel.</div>
+                {% endif %}
+            </div>
+            <div class="card-footer d-flex justify-content-center text-muted">
+                <a href="{{ path('app_module_edit', {'id': module.id}) }}" class="btn btn-info text-light m-2">Modifier</a>
+                {{ include('module/_delete_form.html.twig') }}
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}
